@@ -25,9 +25,9 @@ CREATE TABLE species (
     conservation_status VARCHAR(50)
 );
 
-SELECT * from species;
-SELECT * from rangers;
-SELECT * from sightings;
+-- SELECT * from species;
+-- SELECT * from rangers;
+-- SELECT * from sightings;
 
 CREATE TABLE sightings (
     sighting_id SERIAL PRIMARY KEY,
@@ -39,7 +39,7 @@ CREATE TABLE sightings (
     FOREIGN KEY (ranger_id) REFERENCES rangers(ranger_id),
     FOREIGN KEY (species_id) REFERENCES species(species_id)
 );
-DROP Table sightings;
+-- DROP Table sightings;
 
 -- Insert rangers
 INSERT INTO rangers (name, region) VALUES
