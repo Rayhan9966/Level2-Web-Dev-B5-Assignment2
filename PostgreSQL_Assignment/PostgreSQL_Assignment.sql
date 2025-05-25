@@ -42,7 +42,10 @@ CREATE TABLE sightings (
 DROP Table sightings;
 
 -- Insert rangers
-
+INSERT INTO rangers (name, region) VALUES
+('Alice Green', 'Northern Hills'),
+('Bob White', 'River Delta'),
+('Carol King', 'Mountain Range');
 
 -- Insert species
 INSERT INTO species (common_name, scientific_name, discovery_date, conservation_status) VALUES
