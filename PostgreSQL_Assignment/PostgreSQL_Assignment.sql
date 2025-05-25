@@ -8,7 +8,7 @@ CREATE TABLE rangers (
     name VARCHAR(100) NOT NULL,
     region VARCHAR(100) NOT NULL
 );
-DROP TABLE rangers;
+-- DROP TABLE rangers;
 INSERT INTO rangers (name, region) VALUES
 ('Alice Green', 'Northern Hills'),
 ('Bob White', 'River Delta'),
@@ -16,7 +16,7 @@ INSERT INTO rangers (name, region) VALUES
 
 
 
-DROP TABLE species;
+-- DROP TABLE species;
 CREATE TABLE species (
     species_id SERIAL PRIMARY KEY,
     common_name VARCHAR(100) NOT NULL,
